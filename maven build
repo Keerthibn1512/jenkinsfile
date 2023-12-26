@@ -2,7 +2,7 @@ node {
     stage('Checkout') {
         // Here I assume no credentials are required to clone the repo.
         // If credentials are needed, you must add credentialsId: 'your-credentials-id', before url.
-        git url: 'https://github.com/sidatKS/java-web-app-docker.git',  branch: 'master'
+        git url: '',  branch: 'master'
     }
 stage('Maven Build') {
         // Here I'm assuming you have Maven in your PATH. If it's not the case, you should use the full path to the Maven executable.
